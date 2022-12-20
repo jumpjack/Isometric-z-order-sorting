@@ -111,4 +111,10 @@ IsoBlock.Painter.prototype = {
 		ctx.fillStyle = color;
 		ctx.fill();
 	},
+	drawText: function(ctx, pos, text, color) {
+		var v = this.transform(pos);
+		ctx.lineTo(v.x,v.y);
+		ctx.fillStyle = color;
+		ctx.fillText(text, v.x, v.y);		
+	},
 };
