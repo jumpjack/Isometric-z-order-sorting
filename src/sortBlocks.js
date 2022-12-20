@@ -13,6 +13,7 @@ Array.prototype.remove = function() {
 
 // Sort blocks in the order that they should be drawn for the given camera.
 IsoBlock.sortBlocks = function(blocks, camera) {
+console.log("Blocks to sort:", JSON.parse(JSON.stringify(blocks)));
 
 	var i, j, numBlocks=blocks.length;
 
@@ -41,6 +42,7 @@ IsoBlock.sortBlocks = function(blocks, camera) {
 			}
 		}
 	}
+console.log("Blocks sorted:", JSON.parse(JSON.stringify(blocks)));	
 
 	// Get list of blocks we can safely draw right now.
 	// These are the blocks with nothing behind them.
@@ -73,6 +75,7 @@ IsoBlock.sortBlocks = function(blocks, camera) {
 			}
 		}
 	}
+
 
 	return blocksDrawn;
 };
