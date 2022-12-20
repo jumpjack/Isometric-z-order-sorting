@@ -42,7 +42,7 @@ console.log("Blocks to sort:", JSON.parse(JSON.stringify(blocks)));
 			}
 		}
 	}
-console.log("Blocks sorted:", JSON.parse(JSON.stringify(blocks)));	
+console.log("Blocks sorted:", blocks);	
 
 	// Get list of blocks we can safely draw right now.
 	// These are the blocks with nothing behind them.
