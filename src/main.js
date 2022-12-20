@@ -226,7 +226,9 @@ IsoBlock.makeFigure = function(options) {
 			// right face
 			painter.fillQuad(ctx, b.frontDown, b.frontUp, b.rightUp, b.rightDown, color.medium, lineWidth);
 		}
-		painter.drawText(ctx, b.leftUp, "x=" + b.leftUp.x + ",y=" + b.leftUp.y + ",z=" + ( b.leftUp.x*1 + b.leftUp.y*1), 'black');
+		centerX =  b.rightDown.x;
+		centerY = b.leftDown.y;
+		painter.drawText(ctx, b.leftUp, "x=" + centerX + ",y=" + centerY + ",z=" + ( centerX*1 + centerY*1), 'black');
 	};
 
 	// draw a plane to separate two isometric blocks.
