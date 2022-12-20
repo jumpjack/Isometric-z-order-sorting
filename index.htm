@@ -357,13 +357,13 @@ The dark glass illustrates this separation.
 			var topBlock =   new IsoBlock.Block({x:4,y:2,z:2},{x:1.25,y:2,z:1}, IsoBlock.colors.orange);
 			var frontBlock = new IsoBlock.Block({x:1,y:1,z:0},{x:2,y:2,z:1}, IsoBlock.colors.green);
 			IsoBlock.makeFigure({ canvas:'figure5a', drawPlane: true,
-				blocks: [ refBlock, leftBlock ],
+				blocks: [ refBlock, leftBlock ], drawAxis:true,axisLen: 12,
 			});
 			IsoBlock.makeFigure({ canvas:'figure5b', drawPlane: true,
-				blocks: [ refBlock, topBlock ],
+				blocks: [ refBlock, topBlock ], drawAxis:true,axisLen: 12,
 			});
 			IsoBlock.makeFigure({ canvas:'figure5c', drawPlane: true,
-				blocks: [ refBlock, frontBlock ],
+				blocks: [ refBlock, frontBlock ], drawAxis:true,axisLen: 12,
 			});
 		</script>
 	</figure>
@@ -447,7 +447,7 @@ since both blocks that were behind it have been drawn.
 				new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:1.5}, IsoBlock.colors.red),
 				new IsoBlock.Block({x:3,y:1,z:0},{x:1,y:4,z:1},   IsoBlock.colors.blue),
 			];
-			IsoBlock.makeFigure({ canvas:'figure7', blocks: blocks, scale: function(w,h) { return h/7; }});
+			IsoBlock.makeFigure({ canvas:'figure7', blocks: blocks, scale: function(w,h) { return h/7; }, drawAxis:true,axisLen: 12,});
 		</script>
 	</figure>
 
@@ -483,7 +483,7 @@ another.  This prevents us from drawing a first box.
 			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:1}, IsoBlock.colors.orange),
 			new IsoBlock.Block({x:1,y:2,z:1},{x:1,y:1,z:1}, IsoBlock.colors.orange),
 		];
-		IsoBlock.makeFigure({ canvas:'figure8', blocks: blocks, scale: function(w,h) { return h/6;} });
+		IsoBlock.makeFigure({ canvas:'figure8', blocks: blocks, scale: function(w,h) { return h/6;}, drawAxis:true,axisLen: 12, });
 		</script>
 	</figure>
 
@@ -617,7 +617,7 @@ Single-tiled base
 			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:3}, IsoBlock.colors.blue),
 			new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:4}, IsoBlock.colors.green),
 		];
-		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, });
+		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12,});
 		</script>
 	</figure>
 	
