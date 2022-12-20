@@ -599,6 +599,25 @@ Thanks to <a href="https://lobste.rs/s/bengjo/drawing_isometric_boxes_correct_or
 			});
 		</script>
 	</figure>
+<p>
+	Added by Jumpjack/p>
+Special case: all blocks have same base (1 single tile) but can have vaiorus heights. All blocks lay on ground (z=0).
 
+	<figure>
+		<canvas id='figure1j' width=650 height=200></canvas>
+		<figcaption>
+Single-tiled base
+		</figcaption>
+		<script>
+		var blocks = [
+			new IsoBlock.Block({x:1,y:1,z:0},{x:1,y:1,z:1}, IsoBlock.colors.yellow),
+			new IsoBlock.Block({x:2,y:1,z:0},{x:1,y:2,z:3}, IsoBlock.colors.red),
+			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:2}, IsoBlock.colors.blue),
+			new IsoBlock.Block({x:2,y:2,z:01},{x:1,y:1,z:4}, IsoBlock.colors.green),
+		];
+		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, });
+		</script>
+	</figure>
+	
 </body>
 </html>
