@@ -617,9 +617,24 @@ Single-tiled base
 			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:2}, IsoBlock.colors.blue),
 			new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:1}, IsoBlock.colors.green),
 		];
-		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: true,});
+		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, drawAxis:true, axisLen: 12, silhouette: false,});
 		</script>
 	</figure>
-	
+
+	<figure>
+		<canvas id='figure2j' width=650 height=200></canvas>
+		<figcaption>
+Single-tiled base (transparent)
+		</figcaption>
+		<script>
+		var blocks = [
+			new IsoBlock.Block({x:1,y:1,z:0},{x:1,y:1,z:4}, IsoBlock.colors.yellow),
+			new IsoBlock.Block({x:2,y:1,z:0},{x:1,y:1,z:3}, IsoBlock.colors.red),
+			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:2}, IsoBlock.colors.blue),
+			new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:1}, IsoBlock.colors.green),
+		];
+		IsoBlock.makeFigure({ canvas:'figure2j', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: true,});
+		</script>
+	</figure>	
 </body>
 </html>
