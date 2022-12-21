@@ -227,7 +227,7 @@ IsoBlock.makeFigure = function(options) {
 			painter.fillQuad(ctx, b.frontDown, b.frontUp, b.rightUp, b.rightDown, color.medium, lineWidth);
 		}
 		centerX =  b.backDown.x;
-		centerY = b.rightDown.y;
+		centerY = b.backDown.y;
 		
 		var t = 
 		"Cx,Cy=" + centerX + "," + centerY +" / " +
