@@ -607,6 +607,7 @@ Special case: all blocks have same base (1 single tile) but can have vaiorus hei
 
 	<figure>
 		<canvas id='figure1j' width=650 height=200></canvas>
+		<canvas id='figure2j' width=650 height=200></canvas>
 		<figcaption>
 Single-tiled base
 		</figcaption>
@@ -618,23 +619,38 @@ Single-tiled base
 			new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:1}, IsoBlock.colors.green),
 		];
 		IsoBlock.makeFigure({ canvas:'figure1j', blocks: blocks, sortBlocks: true, drawAxis:true, axisLen: 12, silhouette: false,});
+		IsoBlock.makeFigure({ canvas:'figure2j', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: true,});
 		</script>
 	</figure>
 
 	<figure>
-		<canvas id='figure2j' width=650 height=200></canvas>
 		<figcaption>
-Single-tiled base (transparent)
+		<canvas id='figure3ja' width=300 height=200></canvas>
+		<canvas id='figure3jb' width=300 height=200></canvas>
+		<canvas id='figure3jc' width=300 height=200></canvas>
+		<canvas id='figure3jd' width=300 height=200></canvas>
 		</figcaption>
 		<script>
 		var blocks = [
 			new IsoBlock.Block({x:1,y:1,z:0},{x:1,y:1,z:4}, IsoBlock.colors.yellow),
+		];
+		IsoBlock.makeFigure({ canvas:'figure3ja', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: false,});
+
+				var blocks = [
 			new IsoBlock.Block({x:2,y:1,z:0},{x:1,y:1,z:3}, IsoBlock.colors.red),
+		];
+		IsoBlock.makeFigure({ canvas:'figure3jb', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: false,});
+
+				var blocks = [
 			new IsoBlock.Block({x:1,y:2,z:0},{x:1,y:1,z:2}, IsoBlock.colors.blue),
+		];
+		IsoBlock.makeFigure({ canvas:'figure3jc', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: false,});
+
+				var blocks = [
 			new IsoBlock.Block({x:2,y:2,z:0},{x:1,y:1,z:1}, IsoBlock.colors.green),
 		];
-		IsoBlock.makeFigure({ canvas:'figure2j', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: true,});
-		</script>
+		IsoBlock.makeFigure({ canvas:'figure3jd', blocks: blocks, sortBlocks: true, drawAxis:true,axisLen: 12, silhouette: false,});
+</script>
 	</figure>	
 </body>
 </html>
