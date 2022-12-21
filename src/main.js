@@ -226,13 +226,10 @@ IsoBlock.makeFigure = function(options) {
 			// right face
 			painter.fillQuad(ctx, b.frontDown, b.frontUp, b.rightUp, b.rightDown, color.medium, lineWidth);
 		}
-		centerX =  b.rightDown.x;
-		centerY = b.leftDown.y;
+		centerX =  b.backDown.x;
+		centerY = b.rightDown.y;
 		
-		var t = b.leftUp.x + "," + b.leftUp.y + " / " + 
-		b.rightUp.x + "," + b.rightUp.y + " / " + 
-		b.leftDown.x + "," + b.leftDown.y + " / " + 
-		b.rightDown.x + "," + b.rightDown.y + " / " + 
+		var t = 
 		"Cx,Cy=" + centerX + "," + centerY +" / " +
 		"z=" + ( centerX*1 + centerY*1);
 		
