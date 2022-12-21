@@ -229,11 +229,11 @@ IsoBlock.makeFigure = function(options) {
 		centerX =  b.rightDown.x;
 		centerY = b.leftDown.y;
 		
-		var t = b.leftUp.x + "," + b.leftUp.y + "<br>" + 
-		b.rightUp.x + "," + b.rightUp.y + "<br>" + 
-		b.leftDown.x + "," + b.leftDown.y + "<br>" + 
-		b.rightDown.x + "," + b.rightDown.y + "<br>" + 
-		"Cx,Cy=" + centerX + "," + centerY +"<br>" +
+		var t = b.leftUp.x + "," + b.leftUp.y + " / " + 
+		b.rightUp.x + "," + b.rightUp.y + " / " + 
+		b.leftDown.x + "," + b.leftDown.y + " / " + 
+		b.rightDown.x + "," + b.rightDown.y + " / " + 
+		"Cx,Cy=" + centerX + "," + centerY +" / " +
 		"z=" + ( centerX*1 + centerY*1);
 		
 		painter.drawText(ctx, b.leftDown, "10px Arial", t, 'black');
