@@ -228,7 +228,7 @@ IsoBlock.makeFigure = function(options) {
 		}
 		centerX =  b.rightDown.x;
 		centerY = b.leftDown.y;
-		painter.drawText(ctx, b.leftUp, "x=" + centerX + ",y=" + centerY + ",z=" + ( centerX*1 + centerY*1), 'black');
+		painter.drawText(ctx, b.leftUp, centerX + "," + centerY + "," + ( centerX*1 + centerY*1), 'black');
 	};
 
 	// draw a plane to separate two isometric blocks.
